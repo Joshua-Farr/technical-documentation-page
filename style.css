@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Creating the nav bar and sticking it to the left side of the page */
+#navbar{
+    /* border: 2px solid black; */
+    height: 100%;    
+    width:200px;
+    text-align: center;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    background-color:#0A1849;
+}
+
+header h3{
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.elements{
+    display:flex;
+}
+
+#navbar ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 400px;
+    list-style: none;
+
+   
+    /* border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+
+}
+
+li > a{
+    color: black;
+}
+
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+}
+
+/* Main Documentation Page Outline */
+
+
+#main-doc{
+    position: absolute ;
+    left: 250px;
+    margin-top: 15px;
+    padding:20px;
+    margin-right: 50px;
+}
+
+
+main header{
+    margin-top: 25px;
+
+}
+
+.main-section header{
+    margin-bottom:5px;
+}
+
+
+.main-section p{
+    margin-bottom:15px;
+}
+
+.code-block{
+    background: rgba(211,211,211,.35);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+li{
+    margin-left: 35px;
+    margin-bottom: 15px;
+}
+
+
+/* Responsive design media query for mobile */
+
+@media (max-width: 700px){
+
+    #navbar{
+        display:none;
+    }
+
+    #main-doc{
+        position:unset;
+        margin-top: 15px;
+        padding:20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .main-section header{
+        background-color:#0A1849;
+        color: white;
+        padding: 10px;
+    }
+
+
+}
